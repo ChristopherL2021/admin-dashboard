@@ -9,4 +9,136 @@
 
 html, body {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    height: 100%;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-row-start: 1;
+    grid-row-end: -1;
+
+    background-color: rgb(41, 69, 107);
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    width: 400px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-size: 50px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    height: 90%;
+}
+
+.dashboard img {
+    height: 80px;
+}
+
+.icon-group-container {
+    display: grid;
+    gap: 70px;
+
+    grid-template-rows: 300px 1fr;
+}
+
+.icon-group {
+    font-size: 25px;
+    display: grid;
+    align-items: center;
+
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}
+
+.home img {
+    height: 30px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings {
+    display: grid;
+    font-size: 25px;
+    align-items: center;
+
+    grid-template-rows: 50px 50px 50px;
+}
+
+.main-content-area {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+
+    padding: 25px;
+}
+
+.header {
+    display: grid;
+
+    grid-template-rows: 1fr 2fr;
+}
+
+.searchbar-container {
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+}
+
+.searchbar {
+    display: grid;
+
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+
+    padding-right: 150px;
+    gap: 10px;
+}
+
+.searchbar input {
+    max-width: 400px;
+
+    border-radius: 10px;
+    height: 30px;
+
+    border-style: none;
+    background-color: lightgray;
+
+    padding-left: 10px;
+}
+
+.user-panel {
+    display: grid;
+
+    grid-template-columns: 50px 100px 1fr;
+    align-items: center;
+
+    gap: 5px;
+}
+
+#user-panel-icon {
+    height: 100px;
+}
+
+#user-panel-name {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#notification-icon {
+    height: 30px;
 }
