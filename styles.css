@@ -90,7 +90,7 @@ html, body {
 .header {
     display: grid;
 
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 110px 1px;
 }
 
 .searchbar-container {
@@ -110,7 +110,7 @@ html, body {
 }
 
 .searchbar input {
-    max-width: 400px;
+    max-width: 450px;
 
     border-radius: 10px;
     height: 30px;
@@ -129,17 +129,68 @@ html, body {
 
     gap: 5px;
     justify-self: end;
+    justify-items: center;
 }
 
 #user-panel-icon {
-    height: 100px;
+    height: 75px;
 }
 
 #user-panel-name {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 10px;
 }
 
 #notification-icon {
     height: 30px;
+}
+
+.searchbar-container-lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+}
+
+.user-icon-name {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+
+    align-items: center;
+}
+
+.user-name-container {
+    font-weight: bold;
+}
+
+.user-icon-name img {
+    height: 100px;
+}
+
+.user-name {
+    font-size: 26px;
+}
+
+.media-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-self: end;
+}
+
+.media-btn div {
+    display: grid;
+    align-items: center;
+    width: 100px;
+    height: 45px;
+
+    border-radius: 20px;
+
+    margin: 0px 20px;
+
+    font-size: 20px;
+    background-color: rgb(61, 89, 127);
+    text-align: center;
+    color: white;
 }
