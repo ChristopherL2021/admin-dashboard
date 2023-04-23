@@ -198,4 +198,31 @@ html, body {
     background-color: lightgray;
 
     box-shadow: inset 0px 5px 5px gray;
+
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(auto-fit, 250px);
+
+    gap: 25px;
+}
+
+.card {
+    display: grid;
+    background-color: blue;
+
+    height: 250px;
 }
