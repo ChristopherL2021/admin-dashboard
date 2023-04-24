@@ -212,6 +212,11 @@ html, body {
     grid-template-rows: 50px 1fr;
 }
 
+.project-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
@@ -222,7 +227,20 @@ html, body {
 
 .card {
     display: grid;
-    background-color: blue;
+    background-color: white;
 
     height: 250px;
+    border-radius: 25px;
+
+    padding: 30px 20px;
+    box-shadow: inset 10px 0px 0px 0px goldenrod;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: rgba(100, 100, 100, 75);
 }
