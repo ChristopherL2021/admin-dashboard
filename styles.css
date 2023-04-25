@@ -219,7 +219,7 @@ html, body {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fit, 450px);
     grid-template-rows: repeat(auto-fit, 250px);
 
     gap: 25px;
@@ -232,13 +232,22 @@ html, body {
     height: 250px;
     border-radius: 25px;
 
-    padding: 30px 20px;
+    padding: 30px 30px;
     box-shadow: inset 10px 0px 0px 0px goldenrod;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: 25px 25px 25px;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
 }
 
 .card-title {
     font-size: 20px;
     font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .card-text {
